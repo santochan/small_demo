@@ -2,6 +2,10 @@ $(function() {
   $.datepicker.setDefaults( $.datepicker.regional[ "" ] );
     $( "#start_date" ).datepicker( $.datepicker.regional[ "zh-CN" ] );
     $( "#end_date" ).datepicker( $.datepicker.regional[ "zh-CN" ] );
+    var now_date = new Date();
+    var week_later = new Date(now_date-0+ (-7)*86400000);
+    $("#end_date").val(now_date.getFullYear()+"-"+(now_date.getMonth()+1)+"-"+now_date.getDate());
+    $("#start_date").val(week_later.getFullYear()+"-"+(week_later.getMonth()+1)+"-"+week_later.getDate());
 
     var spline_chart = new Highcharts.Chart({
             chart: {
@@ -9,7 +13,8 @@ $(function() {
                 type: 'spline'
             },
             title: {
-                text: '满意度'
+                align:"left",
+                text: '满意度趋势图（月）'
             },
             xAxis: {
                 type: 'datetime'
@@ -155,7 +160,8 @@ $(function() {
                 type: 'column'
             },
             title: {
-                text: '满意度'
+                align:"left",
+                text: '区域满意度对比'
             },
             tooltip: {
                         pointFormat: '{series.name}: <b>{point.y}%</b>',
@@ -194,7 +200,8 @@ $(function() {
                           plotShadow: false
                       },
                       title: {
-                          text: 'Browser market shares at a specific website, 2010'
+                          align:"left",
+                          text: '业务交易数量对比'
                       },
                       tooltip: {
                         pointFormat: '{series.name}: <b>{point.percentage}%</b>',
@@ -214,17 +221,16 @@ $(function() {
                           type: 'pie',
                           name: 'Browser share',
                           data: [
-                              ['Firefox',   45.0],
-                              ['IE',       26.8],
+                              ['话费服务',   45.0],
+                              ['充值缴费',       26.8],
                               {
-                                  name: 'Chrome',
+                                  name: '业务办理',
                                   y: 12.8,
                                   sliced: true,
                                   selected: true
                               },
-                              ['Safari',    8.5],
-                              ['Opera',     6.2],
-                              ['Others',   0.7]
+                              ['优惠促销',    8.5],
+                              ['选号入网',     6.2]
                           ]
                       }]
                   });

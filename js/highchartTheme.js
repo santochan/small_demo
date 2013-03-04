@@ -1,0 +1,14 @@
+Highcharts.theme = {
+    chart: {
+        backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, '#EEEEEE']
+            ]
+        },
+    }
+};
+
+// Apply the theme
+Highcharts.setOptions(Highcharts.theme);

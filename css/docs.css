@@ -70,6 +70,11 @@
 /*custom*/
 .side-list {
   list-style: none;
+  margin: 0;
+}
+
+.side-list > li {
+  line-height: 25px;
 }
 
 .chart_box{
