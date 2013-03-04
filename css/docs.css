@@ -84,5 +84,14 @@
 /*nav style*/
 .navbar .brand{
   font-weight: 800;
-  
+
+}
+
+.nav{
+  font-weight: 600;
+}
+
+.dropdown-menu >li >a{
+  color: #08c;
+  font-weight: 600;
 }
