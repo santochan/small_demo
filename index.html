@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>一个例子</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/smoothness/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" media="screen">
+
+
+    <link href="css/docs.css" rel="stylesheet" >
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="navbar navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">这里放LOGO</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li id="fat-menu" class="dropdown">
+                  <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">金三顺 <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">详细信息</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">资料修改</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">登出</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav">
+                <li class="active"><a href="#">满意度展示</a></li>
+                <li><a href="#about">业务维护</a></li>
+                <li><a href="#contact">计算模型</a></li>
+                <li><a href="#contact">系统管理</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row-fluid">
+          <div class="span3 bs-docs-sidebar">
+            
+              <ul class="nav nav-list bs-docs-sidenav " role="menu">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">话费服务</a>
+                    <ul class="dropdown-menu">
+                          <li><a tabindex="-1" href="#">账单查询</a></li>
+                          <li><a tabindex="-1" href="#">详单查询</a></li>
+                          <li><a tabindex="-1" href="#">余额查询</a></li>
+                          <li><a tabindex="-1" href="#">账单定制</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">充值缴费</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">网上充值</a></li>
+                      <li><a tabindex="-1" href="#">购买电子充值卡</a></li>
+                      <li><a tabindex="-1" href="#">充值历史</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">业务办理</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">综合套餐</a></li>
+                        <li><a tabindex="-1" href="#">基础服务</a></li>
+                        <li><a tabindex="-1" href="#">语音通话</a></li>
+                        <li><a tabindex="-1" href="#">短彩信</a></li>
+                        <li><a tabindex="-1" href="#">互联网服务</a></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1" href="#">资讯服务</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">满意100</a></li>
+                                <li><a tabindex="-1" href="#">优惠资讯</a></li>
+                                <li><a tabindex="-1" href="#">新闻与评论</a></li>
+                                <li><a tabindex="-1" href="#">生活助手</a></li>
+                                <li><a tabindex="-1" href="#">体育军事</a></li>
+                                <li><a tabindex="-1" href="#">休闲娱乐</a></li>
+                            </ul>
+                        </li>
+                        <li><a tabindex="-1" href="#">通话辅助</a></li>
+                        <li><a tabindex="-1" href="#">生活应用</a></li>
+                        <li><a tabindex="-1" href="#">国际业务</a></li>
+                        <li><a tabindex="-1" href="#">终端服务</a></li>
+                        <li><a tabindex="-1" href="#">国际业务</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">优惠促销</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">全球通优惠</a></li>
+                      <li><a tabindex="-1" href="#">动感地带优惠</a></li>
+                      <li><a tabindex="-1" href="#">神州行优惠</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">选号入网</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1" href="#">全球通吉祥号</a></li>
+                      <li><a tabindex="-1" href="#">动感吉祥号</a></li>
+                      <li><a tabindex="-1" href="#">五元卡吉祥号</a></li>
+                      <li><a tabindex="-1" href="#">畅听卡吉祥号</a></li>
+                      <li><a tabindex="-1" href="#">家园卡吉祥号</a></li>
+                      <li><a tabindex="-1" href="#">普通号</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <br>
+              
+              <div class="well">
+                <ul class = "side-list">
+                  <li><i class="icon-leaf"></i><a href="#column_chart">图表1</a></li>
+                  <li><i class="icon-adjust"></i><a href="#pie_chart">图表2</a></li>
+                  <li><i class="icon-picture"></i><a href="#line_chart">图表3</a></li>
+                </ul>
+              </div>
+              
+            
+          </div><!--/span-->
+          <div class="span9">
+
+            <form class="form-inline">
+              <label>开始时间</label>
+              <input type="text" class="input-small " id="start_date">
+              <label>结束时间</label>
+              <input type="text" class="input-small" id="end_date">
+              <select class="span2">
+                <option>内部</option>
+                <option>外部</option>
+              </select>
+              <div class="input-append">
+                <input class="span8" id="appendedInputButtons" type="text">
+                <button class="btn" type="button">查询</button>
+                
+              </div>
+            </form>
+            <img  src="img/gis.jpg" alt="" width="100%"/>
+            <div class="well">
+              <div id = "column_chart" class="row"></div>
+              <div id="pie_chart" class="row"></div>
+              <div id="line_chart" class="row"></div>
+              
+            </div>
+            
+
+           
+          </div><!--/span-->
+        </div><!--/row-->
+
+        <hr>
+
+        <footer>
+          <p>© Company 2013</p>
+        </footer>
+
+      </div><!--/.fluid-container-->
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui-1.10.1.min.js"></script>
+    <script src="js/jquery.ui.datepicker-zh-CN.js"></script>
+    <script src="js/highcharts.js"></script>
+
+    <script src="js/custom.js"></script>
+
+</html>
