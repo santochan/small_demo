@@ -251,11 +251,17 @@ $(function() {
 
     
     function shuffle_data(){
-      var o_data = column_chart.series[0].data
-      console.log(o_data)
-      // column_chart.series[0];
+      
+      random_data(column_chart.series[0].data,65,100);
+      random_data(pie_chart.series[0].data,1,30);
+      random_data(spline_chart.series[0].data,65,100);
+
+
+    }
+
+    function random_data(o_data,min,max){
       for (var i=0;i<o_data.length;i++){
-          o_data[i].update(parseInt(Math.random()*(100-65+1)+65));
+          o_data[i].update(parseInt(Math.random()*(max-min+1)+min));
       }
     }
 
