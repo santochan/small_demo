@@ -3,7 +3,7 @@ Highcharts.theme = {
         backgroundColor: {
             linearGradient: [0, 0, 500, 500],
             stops: [
-                [0, 'rgb(255, 255, 255)'],
+                [0, '#EEEEEE'],
                 [1, '#EEEEEE']
             ]
         },
