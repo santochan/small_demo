@@ -7,6 +7,8 @@ $(function() {
     $("#end_date").val(now_date.getFullYear()+"-"+(now_date.getMonth()+1)+"-"+now_date.getDate());
     $("#start_date").val(week_later.getFullYear()+"-"+(week_later.getMonth()+1)+"-"+week_later.getDate());
 
+
+
     var spline_chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'line_chart',
@@ -247,5 +249,15 @@ $(function() {
                       }]
                   });
 
+    
+    function shuffle_data(){
+      var o_data = column_chart.series[0].data
+      console.log(o_data)
+      // column_chart.series[0];
+      for (var i=0;i<o_data.length;i++){
+          o_data[i].update(parseInt(Math.random()*(100-65+1)+65));
+      }
+    }
 
+    $("#phone_business").click(shuffle_data);
 });
