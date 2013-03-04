@@ -14,7 +14,11 @@ $(function() {
             },
             title: {
                 align:"left",
-                text: '满意度趋势图（月）'
+                text: '满意度趋势图（月）',
+                style:{
+                  
+                  fontWeight: 600
+                }
             },
             xAxis: {
                 type: 'datetime'
@@ -161,7 +165,11 @@ $(function() {
             },
             title: {
                 align:"left",
-                text: '区域满意度对比'
+                text: '区域满意度对比',
+                style:{
+                            
+                            fontWeight: 600
+                }
             },
             tooltip: {
                         pointFormat: '{series.name}: <b>{point.y}%</b>',
@@ -201,7 +209,11 @@ $(function() {
                       },
                       title: {
                           align:"left",
-                          text: '业务交易数量对比'
+                          text: '业务交易数量对比',
+                          style:{
+                            
+                            fontWeight: 600
+                          }
                       },
                       tooltip: {
                         pointFormat: '{series.name}: <b>{point.percentage}%</b>',
