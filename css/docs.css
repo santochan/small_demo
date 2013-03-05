@@ -116,8 +116,13 @@
   font-size: 16px;
   color: #3E576F;
   font-weight: 600;
+  line-height: 50px;
 }
 
 #taiyuan{
   display: none;
+}
+
+.table{
+  background-color: #EEEEEE;
 }
