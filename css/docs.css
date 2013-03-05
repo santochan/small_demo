@@ -100,13 +100,24 @@
   font-weight: 600;
 }
 
+.navbar .navbar-inner .brand{
+  color: #00A2E8;
+}
+
 .dropdown-menu >li >a{
   color: #08c;
   font-weight: 600;
 }
 
-/*.highcharts-tooltip  {
-    background-color:white;
-    z-index:9999!important;  
+
+
+.table-caption{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #3E576F;
+  font-weight: 600;
 }
-*/
+
+#taiyuan{
+  display: none;
+}
