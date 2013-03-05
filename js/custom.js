@@ -249,6 +249,10 @@ $(function() {
                       }]
                   });
 
+    $("#pie_chart .highcharts-container").css({'z-index':-1});
+    $("#column_chart .highcharts-container").css({'z-index':-1});
+    $("#line_chart .highcharts-container").css({'z-index':-1});
+
     
     function shuffle_data(){
       
@@ -265,5 +269,6 @@ $(function() {
       }
     }
 
-    $("#phone_business").click(shuffle_data);
+    $("#side_menu li a").click(shuffle_data);
+
 });

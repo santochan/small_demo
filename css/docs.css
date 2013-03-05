@@ -79,6 +79,7 @@
 
 .chart_box{
   margin: 0 0 20px;
+  z-index: -1;
 }
 
 /*nav style*/
