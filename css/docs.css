@@ -67,6 +67,12 @@
   bottom: 270px;
 }
 
+.bs-docs-sidebar.affix{
+  position: fixed;
+  z-index: 1000;
+} 
+
+
 /*custom*/
 .side-list {
   list-style: none;
@@ -79,7 +85,9 @@
 
 .chart_box{
   margin: 0 0 20px;
-  z-index: -1;
+  position: relative;
+  z-index: 1;
+
 }
 
 /*nav style*/
@@ -96,3 +104,9 @@
   color: #08c;
   font-weight: 600;
 }
+
+/*.highcharts-tooltip  {
+    background-color:white;
+    z-index:9999!important;  
+}
+*/

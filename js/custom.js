@@ -218,6 +218,7 @@ $(function() {
                           }
                       },
                       tooltip: {
+                        useHTML: true,
                         pointFormat: '{series.name}: <b>{point.percentage}%</b>',
                         percentageDecimals: 1
                       },
@@ -249,9 +250,9 @@ $(function() {
                       }]
                   });
 
-    $("#pie_chart .highcharts-container").css({'z-index':-1});
-    $("#column_chart .highcharts-container").css({'z-index':-1});
-    $("#line_chart .highcharts-container").css({'z-index':-1});
+    // $("#pie_chart .highcharts-container").css({'z-index':0});
+    // $("#column_chart .highcharts-container").css({'z-index':-1});
+    // $("#line_chart .highcharts-container").css({'z-index':-1});
 
     
     function shuffle_data(){
