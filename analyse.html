@@ -55,8 +55,9 @@
                 </li>
               </ul>
               <ul class="nav">
-                <li><a href="index.html">满意度感知</a></li>
-                <li class="active"><a href="analyse.html">满意度分析</a></li>
+                <li class="active"><a href="index.html">满意度感知</a></li>
+                <li><a href="analyse.html">满意度分析</a></li>
+                <li><a href="#contact">系统健康度</a></li>
                 <li><a href="#contact">满意度建模</a></li>
                 <li><a href="#contact">系统管理</a></li>
               </ul>
@@ -68,6 +69,10 @@
       <div class="container-fluid">
         <div class="row-fluid">
           <div class="span3 bs-docs-sidebar affix  " >
+
+              <ul id="bread_top" class="breadcrumb">
+                
+              </ul>
             
               <ul id="side_menu" class="nav nav-list bs-docs-sidenav" role="menu">
                 <li class="dropdown-submenu">
@@ -136,6 +141,17 @@
                 </li>
               </ul>
               <br>
+
+              <div class="well">
+                <h2 class="title">SmartLink</h2>
+                <ul class = "side-list">
+                  <li><a href="#">WebServer</a></li>
+                  <li><a href="#">J2EE</a></li>
+                  <li><a href="#">TUXEDO</a></li>
+                  <li><a href="#">WebService</a></li>
+                  <li><a href="#">Database</a></li>
+                </ul>
+              </div>
               
               <div class="well">
                 <ul class = "side-list">
@@ -150,7 +166,7 @@
             
           </div><!--/span-->
           <div class="span9 offset3 ">
-
+            
             <form class="form-inline">
               <label>开始时间</label>
               <input type="text" class="input-small span2 " id="start_date">
@@ -230,12 +246,11 @@
               <div id = "column_chart" class="row chart_box"></div>
               <div id="pie_chart" class="row chart_box"></div>
               <div id="line_chart" class="row chart_box"></div>
-              
-     
-            
 
-           
-          </div><!--/span-->
+          </div>
+
+
+         
         </div><!--/row-->
 
         <hr>
