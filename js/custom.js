@@ -190,6 +190,36 @@ $(function() {
                 data: [80, 70, 75, 90, 91, 87, 64, 74, 86,90]
             }]
         });
+    var another_column_chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'another_column_chart',
+                type: 'column'
+            },
+            title: {
+                align:"left",
+                text: '区域满意度对比',
+                style:{
+                            
+                            fontWeight: 600
+                }
+            },
+            tooltip: {
+                        pointFormat: '{series.name}: <b>{point.y}%</b>',
+                        percentageDecimals: 1
+            },
+            xAxis: {
+                categories: ["大同", "晋城", "晋中", "临汾", "吕梁", "朔州", "太原", "忻州", "阳泉", "运城"]
+            },
+            yAxis: {
+                title: {
+                    text: '满意度%'
+                }
+            },
+            series: [{
+                name: "服务满意度",
+                data: [80, 70, 75, 90, 91, 87, 64, 74, 86,90]
+            }]
+        });
 
   Highcharts.getOptions().colors = Highcharts.map(Highcharts.getOptions().colors, function(color) {
           return {

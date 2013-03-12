@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 
 .bs-docs-sidenav {
-  /*width: 228px;*/
+  /*width: 260px;*/
   margin: 0 0 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -142,4 +142,20 @@
 .breadcrumb{
   margin: 0;
   background-color: transparent;
+}
+
+.container{
+  width: 1170px;
+}
+
+.form-horizontal .control-label {
+   width: 70px;
+   }
+   
+.form-horizontal .controls {
+  margin-left: 90px;
+}
+
+#all_form{
+  padding-top: 15px;
 }

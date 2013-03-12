@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>客户满意度感知显性化系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/smoothness/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" media="screen">
+
+
+    <link href="css/docs.css" rel="stylesheet" >
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        background: url("img/fabric_of_squares_gray.png");
+        /*background-color: #B6D0EB;*/
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">中国移动山西公司客户满意度感知显性化系统</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav pull-right">
+                <li id="fat-menu" class="dropdown">
+                  <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li role="presentation"><a role="menuitem" tabindex="-1">详细信息</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">资料修改</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1">登出</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav">
+                <li class="active"><a href="index.html">满意度感知</a></li>
+                <li><a href="analyse.html">满意度分析</a></li>
+                <li><a href="#contact">系统健康度</a></li>
+                <li><a href="#contact">满意度建模</a></li>
+                <li><a href="#contact">系统管理</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3 bs-docs-sidebar affix  " >
+
+              <ul id="bread_top" class="breadcrumb">
+                
+              </ul>
+            
+              <ul id="side_menu" class="nav nav-list bs-docs-sidenav" role="menu">
+                <li class="dropdown-submenu">
+                    <a tabindex="-1">话费服务</a>
+                    <ul class="dropdown-menu" role="menu">
+                          <li><a tabindex="-1">账单查询</a></li>
+                          <li><a tabindex="-1">详单查询</a></li>
+                          <li><a tabindex="-1">余额查询</a></li>
+                          <li><a tabindex="-1">账单定制</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1">充值缴费</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1">网上充值</a></li>
+                      <li><a tabindex="-1">购买电子充值卡</a></li>
+                      <li><a tabindex="-1">充值历史</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown-submenu">
+                    <a tabindex="-1">业务办理</a>
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1">综合套餐</a></li>
+                        <li><a tabindex="-1">基础服务</a></li>
+                        <li><a tabindex="-1" id="phone_business">语音通话</a></li>
+                        <li><a tabindex="-1">短彩信</a></li>
+                        <li><a tabindex="-1">互联网服务</a></li>
+                        <li class="dropdown-submenu">
+                            <a tabindex="-1">资讯服务</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1">满意100</a></li>
+                                <li><a tabindex="-1">优惠资讯</a></li>
+                                <li><a tabindex="-1">新闻与评论</a></li>
+                                <li><a tabindex="-1">生活助手</a></li>
+                                <li><a tabindex="-1">体育军事</a></li>
+                                <li><a tabindex="-1">休闲娱乐</a></li>
+                            </ul>
+                        </li>
+                        <li><a tabindex="-1">通话辅助</a></li>
+                        <li><a tabindex="-1">生活应用</a></li>
+                        <li><a tabindex="-1">国际业务</a></li>
+                        <li><a tabindex="-1">终端服务</a></li>
+                        <li><a tabindex="-1">国际业务</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-submenu">
+                    <a tabindex="-1">优惠促销</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1">全球通优惠</a></li>
+                      <li><a tabindex="-1">动感地带优惠</a></li>
+                      <li><a tabindex="-1">神州行优惠</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu">
+                    <a tabindex="-1">选号入网</a>
+                    <ul class="dropdown-menu">
+                      <li><a tabindex="-1">全球通吉祥号</a></li>
+                      <li><a tabindex="-1">动感吉祥号</a></li>
+                      <li><a tabindex="-1">五元卡吉祥号</a></li>
+                      <li><a tabindex="-1">畅听卡吉祥号</a></li>
+                      <li><a tabindex="-1">家园卡吉祥号</a></li>
+                      <li><a tabindex="-1">普通号</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <br>
+
+              <div class="well">
+                <h2 class="title">SmartLink</h2>
+                <ul class = "side-list">
+                  <li><a href="#">WebServer</a></li>
+                  <li><a href="#">J2EE</a></li>
+                  <li><a href="#">TUXEDO</a></li>
+                  <li><a href="#">WebService</a></li>
+                  <li><a href="#">Database</a></li>
+                </ul>
+              </div>
+              
+              <div class="well">
+                <ul class = "side-list">
+                  <li><i class="icon-picture"></i><a href="#">全省地域显示</a></li>
+                  <li><i class="icon-picture"></i><a href="#">所有业务显示</a></li>
+                  <li><i class="icon-leaf"></i><a href="#column_chart">区域满意度对比</a></li>
+                  <li><i class="icon-adjust"></i><a href="#pie_chart">业务交易数量对比</a></li>
+                  <li><i class="icon-picture"></i><a href="#line_chart">满意度历史趋势</a></li>
+                </ul>
+              </div>
+              
+            
+          </div><!--/span-->
+          <div class="span9 offset3 ">
+            <form action="" id="all_form" class="form-horizontal">
+
+  <div class="accordion" id="accordion2">
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+          话费服务
+        </a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse in">
+        <div class="accordion-inner">
+
+          <fieldset>
+          <legend>账单查询</legend>
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+          </filedset>
+          <fieldset>
+          <legend>详单查询</legend>
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+          </filedset>
+
+          <fieldset>
+          <legend>余额查询</legend>
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+          </filedset>
+          <fieldset>
+          <legend>账单定制</legend>
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+            <div class="row-fluid">
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="city">业务项1</label>
+                  <div class="controls">
+                    <input type="text" id="city"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+              <div class="span6 bgcolor">
+                <div class="control-group">
+                  <label class="control-label" for="state">业务项2</label>
+                  <div class="controls">
+                    <input type="text" id="state"> 
+                  </div>
+                </div>
+              </div><!--/span-->
+            </div><!--/row-->  
+          </filedset>
+
+        </div>
+      </div>
+    </div>
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+          充值缴费
+        </a>
+      </div>
+      <div id="collapseTwo" class="accordion-body collapse">
+        <div class="accordion-inner">
+               <fieldset>
+               <legend>网上充值</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>购买电子充值卡</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>购买充值历史</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+      </div>
+    </div>
+    </div>
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+          业务办理
+        </a>
+      </div>
+      <div id="collapseThree" class="accordion-body collapse">
+        <div class="accordion-inner">
+
+               <fieldset>
+               <legend>综合套餐</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>基础服务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>语音通话</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>短彩信</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>互联网服务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>资讯服务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>通话辅助</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>生活应用</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>国际业务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>终端服务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>国际业务</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+      </div>
+      </div>
+    </div>
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+          促销优惠
+        </a>
+      </div>
+      <div id="collapseFour" class="accordion-body collapse">
+        <div class="accordion-inner">
+
+               <fieldset>
+               <legend>全球通优惠</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>动感地带优惠</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>神州行优惠</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-group">
+      <div class="accordion-heading">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+          选号入网
+        </a>
+      </div>
+      <div id="collapseFive" class="accordion-body collapse">
+        <div class="accordion-inner">
+
+               <fieldset>
+               <legend>全球通吉祥号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+               <fieldset>
+               <legend>动感吉祥号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>五元卡吉祥号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>畅听卡吉祥号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>家园卡吉祥号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+
+               <fieldset>
+               <legend>普通号</legend>
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+                 <div class="row-fluid">
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="city">业务项1</label>
+                       <div class="controls">
+                         <input type="text" id="city"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                   <div class="span6 bgcolor">
+                     <div class="control-group">
+                       <label class="control-label" for="state">业务项2</label>
+                       <div class="controls">
+                         <input type="text" id="state"> 
+                       </div>
+                     </div>
+                   </div><!--/span-->
+                 </div><!--/row-->  
+               </filedset>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</form>
+
+
+
+          </div>
+
+
+         
+        </div><!--/row-->
+
+        <hr>
+
+        <footer>
+          <p>© Company 2013</p>
+        </footer>
+
+      </div><!--/.fluid-container-->
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui-1.10.1.min.js"></script>
+    <script src="js/jquery.ui.datepicker-zh-CN.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/highchartTheme.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/analyse.js"></script>
+
+</html>
