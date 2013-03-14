@@ -7,7 +7,12 @@ $(function() {
     $("#end_date").val(now_date.getFullYear()+"-"+(now_date.getMonth()+1)+"-"+now_date.getDate());
     $("#start_date").val(week_later.getFullYear()+"-"+(week_later.getMonth()+1)+"-"+week_later.getDate());
 
+    $("#goto_ty").click(function(){
+      console.log("dd");
+      $("#sx_all").hide();
+      $("#taiyuan").show();
 
+    })
 
     var spline_chart = new Highcharts.Chart({
             chart: {
